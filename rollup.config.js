@@ -10,7 +10,11 @@ export default {
     name: 'z',
   },
   plugins: [
-    babel(),
+    babel(
+      {
+        exclude: 'node_modules/**'
+      }
+    ),
     uglify({},minify)
   ]
 }
