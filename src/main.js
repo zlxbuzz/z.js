@@ -1,8 +1,5 @@
+import url from './url/index'
+
 export default {
-  a (){
-    console.log('a')
-  },
-  b (){
-    console.log('b')
-  }
+  ...url
 }
