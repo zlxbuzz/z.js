@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <title></title>
 </head>
-<script src="dist/z.min.js"></script>
+<script src="dist/z.js"></script>
 <body>
-
 </body>
 <script>
-  console.log(z)
-  z.log(1)
   console.log(z.is('1','Number'))
+  z.each([1,2],function(v){
+    console.log(v)
+  })
   console.log(z.is('1','String'))
+  console.log(z.getParamByName('a'))
 </script>
 </html>

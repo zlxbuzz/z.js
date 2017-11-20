@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:zlxbuzz/z.js.git",
+  "scripts": {
+      "dev": "rollup -c rollup.config.js  -w",
+      "build": "rollup -c rollup.config.js"
+  },
   "author": "zlxbuzz <824665478@qq.com>",
   "license": "MIT",
   "devDependencies": {

@@ -5,7 +5,7 @@ import { minify } from 'uglify-es';
 export default {
   input: 'src/main.js',
   output: {
-    file: 'dist/z.min.js',
+    file: 'dist/z.js',
     format: 'umd',
     name: 'z',
   },
@@ -15,6 +15,6 @@ export default {
         exclude: 'node_modules/**'
       }
     ),
-    uglify({},minify)
+    // uglify({},minify)
   ]
 }
