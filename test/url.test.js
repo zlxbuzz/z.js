@@ -4,7 +4,7 @@ import getParams from '../src/url/getParams'
 describe('url test', ()=>{
   const url = 'http://www.baidu.com?a=1&b=aaa'
 
-  describe('获取url参数',()=>{
+  describe('获取url参数:getParams',()=>{
     test(`${url} getParams('a',url)  应该返回 1`, ()=>{
       expect(getParams('a',url)).toBe('1')
     })
@@ -13,7 +13,7 @@ describe('url test', ()=>{
     })
   })
 
-  describe('解析url',()=>{
+  describe('解析url:parseQueryString',()=>{
     test(`${url} 应该返回 {a:'1',b:'aaa'}`, ()=>{
       expect(parseQueryString(url)).toEqual({a:'1',b:'aaa'})
     })

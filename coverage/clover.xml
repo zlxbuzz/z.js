@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1514964509939" clover="3.2.0">
-  <project timestamp="1514964509939" name="All files">
+<coverage generated="1515057948301" clover="3.2.0">
+  <project timestamp="1515057948302" name="All files">
     <metrics statements="15" coveredstatements="15" conditionals="12" coveredconditionals="6" methods="2" coveredmethods="2" elements="29" coveredelements="23" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2">
       <file name="getParams.js" path="/Users/zhonglingxiao/mygit/z.js/src/url/getParams.js">
         <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="2" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="7" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="2" type="stmt"/>
       </file>
       <file name="parseQueryString.js" path="/Users/zhonglingxiao/mygit/z.js/src/url/parseQueryString.js">
         <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="3" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
