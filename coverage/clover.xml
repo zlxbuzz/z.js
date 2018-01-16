@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1515057948301" clover="3.2.0">
-  <project timestamp="1515057948302" name="All files">
+<coverage generated="1516004167262" clover="3.2.0">
+  <project timestamp="1516004167262" name="All files">
     <metrics statements="15" coveredstatements="15" conditionals="12" coveredconditionals="6" methods="2" coveredmethods="2" elements="29" coveredelements="23" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2">
       <file name="getParams.js" path="/Users/zhonglingxiao/mygit/z.js/src/url/getParams.js">
         <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>

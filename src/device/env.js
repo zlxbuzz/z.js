@@ -1,7 +1,3 @@
-const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-const Android = navigator.userAgent.indexOf('Android') > -1 || navigator.userAgent.indexOf('Adr') > -1;
-const Weixin = navigator.userAgent.indexOf('MicroMessenger') > -1 ;
-
 
 export default function (env) {
   if(env.toLocaleLowerCase() === 'ios'){

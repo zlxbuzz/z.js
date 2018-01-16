@@ -2,8 +2,11 @@ import pkg from './package.json';
 import resolve from 'rollup-plugin-node-resolve';
 import buble from 'rollup-plugin-buble';
 import commonjs from 'rollup-plugin-commonjs'
+import json from 'rollup-plugin-json';
+// import replace from 'rollup-plugin-replace';
+
 import uglify from 'rollup-plugin-uglify'
-// import { minify } from 'uglify-es';
+import { minify } from 'uglify-es';
 
 
 
@@ -17,14 +20,24 @@ export default [
       format: 'umd'
     },
     plugins:[
-      resolve(),
+      // replace({
+      //   'process.env.NODE_ENV': JSON.stringify( 'production' )
+      // }),
+      resolve({
+        jsnext: true,
+        node: true,
+        main: true,
+        browser: true
+      }),
       commonjs({
         include: 'node_modules/**',
       }),
       buble({  // transpile ES2015+ to ES5
         objectAssign: 'Object.assign',
         exclude: ['node_modules/**']
-      })
+      }),
+      // uglify({},minify),
+      json()
     ]
   },
   {
@@ -34,11 +47,17 @@ export default [
       { file: pkg.module, format: 'es' }
     ],
     plugins: [
-      resolve(),
+      resolve({
+        jsnext: true,
+        node: true,
+        main: true,
+        browser: true
+      }),
       commonjs({
         include: 'node_modules/**',
       }),
-      // uglify({},minify),
+      json(),
+      uglify({},minify),
       buble({
         objectAssign: 'Object.assign',
         exclude: ['node_modules/**']
