@@ -8,6 +8,7 @@ import json from 'rollup-plugin-json';
 import uglify from 'rollup-plugin-uglify'
 import { minify } from 'uglify-es';
 
+<<<<<<< HEAD
 
 
 
@@ -65,3 +66,21 @@ export default [
     ]
   }
 ]
+=======
+export default {
+  input: 'src/main.js',
+  output: {
+    file: 'dist/z.js',
+    format: 'umd',
+    name: 'z',
+  },
+  plugins: [
+    babel(
+      {
+        exclude: 'node_modules/**'
+      }
+    ),
+    // uglify({},minify)
+  ]
+}
+>>>>>>> cfd28501fd8f401c0f04a6b94ad364d45891d40c
