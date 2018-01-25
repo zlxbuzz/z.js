@@ -1,6 +1,6 @@
 /**
  * 解析url参数
- * ### Example (es imports)
+ * @example
  * ```js
  * // url www.baidu.com?c=aa
  * import {parseQueryString} from 'zrutil'

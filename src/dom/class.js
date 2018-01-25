@@ -1,6 +1,6 @@
 // https://github.com/ustbhuangyi/picker/blob/master/src/util/dom.js
 /**
- * ### Example (es imports)
+ * @example
  * ```js
  * import {hasClass} from 'zrutil'
  * hasClass(el,'active') => true
@@ -12,7 +12,7 @@ export function hasClass(el, className) {
 };
 
 /**
- * ### Example (es imports)
+ * @example
  * ```js
  * import {addClass} from 'zrutil'
  * addClass(el,'active')
@@ -29,7 +29,7 @@ export function addClass(el, className) {
 };
 
 /**
- * ### Example (es imports)
+ * @example
  * ```js
  * import {removeClass} from 'zrutil'
  * removeClass(el,'active')

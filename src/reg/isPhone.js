@@ -1,6 +1,6 @@
 /**
  * 判断是否是手机号码
- * ### Example (es imports)
+ * @example
  * ```js
  * import {isPhone} from 'zrutil'
  * isPhone('13333333333') => true

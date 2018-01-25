@@ -1,6 +1,6 @@
 /**
  * 判断是否是邮箱
- * ### Example (es imports)
+ * @example
  * ```js
  * import {isEmail} from 'zrutil'
  * isEmail('xxx@qq.com') => true

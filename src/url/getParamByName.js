@@ -1,6 +1,6 @@
 /**
  * 获取url参数
- * ### Example (es imports)
+ * @example
  * ```js
  * // url www.baidu.com?c=aa
  * import {getParamByName} from 'zrutil'
