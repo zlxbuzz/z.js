@@ -12,7 +12,7 @@ export default [
     input: 'src/main.js',
     output: {
       name: '_',
-      file: pkg.browser,
+      file: 'z.min.js',
       format: 'umd'
     },
     plugins:[
