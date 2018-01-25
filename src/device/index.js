@@ -1,7 +1,2 @@
-import env from './env'
-import ismobile from './ismobile'
-
-export default {
-  env,
-  ismobile
-}
+export * from './env'
+export * from './ismobile'

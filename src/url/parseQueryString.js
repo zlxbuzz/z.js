@@ -17,7 +17,7 @@
  *    }
  * });
  */
-function parseQueryString(url) {
+export function parseQueryString(url) {
   if (!url) url = window.location.href;
   var search = url[0] === '?' ? url.substr(1) : url.substring(url.lastIndexOf('?') + 1)
   var theRequest = new Object();
@@ -29,5 +29,3 @@ function parseQueryString(url) {
   }
   return theRequest;
 }
-
-export default parseQueryString

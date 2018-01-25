@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <title></title>
 </head>
-<script src="./dist/z.min.js"></script>
+<script src="./lib/z.min.js"></script>
 <body>
 
 </body>
 <script>
-  console.log(_)
+  _.get('http://user-gw.test.mararun.com/v1/hotel/list',{a:1}).then((data)=>{
+    console.log(data)
+  },(error)=>{
+    console.log(error)
+  })
+
 </script>
 </html>

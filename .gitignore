@@ -2,6 +2,7 @@
 node_modules/
 coverage
 dist/
+lib/
 npm-debug.log
 yarn-error.log
 npm-debug.log*

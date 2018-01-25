@@ -1,18 +1,19 @@
 {
   "name": "z.js",
   "version": "1.0.0",
-  "main": "dist/z.cjs.js",
   "repository": "git@github.com:zlxbuzz/z.js.git",
-  "module": "dist/z.esm.js",
-  "browser": "dist/z.min.js",
+  "main": "lib/z.esm.js",
+  "browser": "lib/z.min.js",
   "author": "zlxbuzz <824665478@qq.com>",
   "license": "MIT",
   "scripts": {
-    "gulp": "gulp",
     "dev": "rollup -c -w",
-    "build": "rollup -c",
+    "build": "npm run test && rollup -c",
     "doc": "node builds/doc.js",
-    "test": "jest --coverage"
+    "test": "jest --verbose  --coverage"
+  },
+  "jest": {
+      "testURL": "http://www.baidu.com?c=ccc"
   },
   "babel": {
     "presets": [
@@ -38,10 +39,5 @@
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "uglify-es": "^3.3.4"
-  },
-  "dependencies": {
-    "axios": "^0.17.1",
-    "diana": "^0.2.4",
-    "qs": "^6.5.1"
   }
 }
