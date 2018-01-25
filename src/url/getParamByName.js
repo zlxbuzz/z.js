@@ -1,8 +1,11 @@
 /**
- * 获取url上的参数.
- * @param {String} - 参数名称
- * @param {String} - url 默认为当前url
- * @returns {a}
+ * 获取url参数
+ * ### Example (es imports)
+ * ```js
+ * // url www.baidu.com?c=aa
+ * import {getParamByName} from 'zrutil'
+ * getParamByName('c') => 'aa'
+ * ```
  */
 export function getParamByName(name, url) {
   if (!url) url = window.location.href;

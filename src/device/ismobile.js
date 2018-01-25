@@ -1,4 +1,12 @@
 //https://github.com/liriliri/eris/blob/master/i/isMobile.js
+/**
+ * 判断是否为手机
+ * ### Example (es imports)
+ * ```js
+ * import {isMobile} from 'zrutil'
+ * isMobile() => true
+ * ```
+ */
 export function isMobile() {
   var cache = {};
   var ua = navigator.userAgent;

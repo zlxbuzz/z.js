@@ -1,13 +1,23 @@
 // https://github.com/ustbhuangyi/picker/blob/master/src/util/dom.js
-export function removeEvent(el, type, fn, capture) {
-  el.removeEventListener(type, fn, !!capture);
-};
-
+/**
+ * ### Example (es imports)
+ * ```js
+ * import {hasClass} from 'zrutil'
+ * hasClass(el,'active') => true
+ * ```
+ */
 export function hasClass(el, className) {
   let reg = new RegExp('(^|\\s)' + className + '(\\s|$)');
   return reg.test(el.className);
 };
 
+/**
+ * ### Example (es imports)
+ * ```js
+ * import {addClass} from 'zrutil'
+ * addClass(el,'active')
+ * ```
+ */
 export function addClass(el, className) {
   if (hasClass(el, className)) {
     return;
@@ -18,6 +28,13 @@ export function addClass(el, className) {
   el.className = newClass.join(' ');
 };
 
+/**
+ * ### Example (es imports)
+ * ```js
+ * import {removeClass} from 'zrutil'
+ * removeClass(el,'active')
+ * ```
+ */
 export function removeClass(el, className) {
   if (!hasClass(el, className)) {
     return;

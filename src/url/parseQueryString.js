@@ -1,21 +1,11 @@
 /**
- * 获取url上的参数.
- * @param {String} - 参数名称
- * @param {String} - url 默认为当前url
- * @returns {value}
- * @example
- * webNotification.showNotification('Example Notification', {
- *    body: 'Notification Text...',
- *    icon: 'my-icon.ico'
- * }, function onShow(error, hide) {
- *    if (error) {
- *        window.alert('Unable to show notification: ' + error.message);
- *    } else {
- *        setTimeout(function hideNotification() {
- *            hide();
- *        }, 5000);
- *    }
- * });
+ * 解析url参数
+ * ### Example (es imports)
+ * ```js
+ * // url www.baidu.com?c=aa
+ * import {parseQueryString} from 'zrutil'
+ * parseQueryString(url) => {c: 'aa'}
+ * ```
  */
 export function parseQueryString(url) {
   if (!url) url = window.location.href;
