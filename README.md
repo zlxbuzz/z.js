@@ -1,6 +1,7 @@
-[![Build Status](https://travis-ci.org/zlxbuzz/z.js.svg?branch=master)](https://travis-ci.org/zlxbuzz/z.js)
-
 # z.js
+
+[![Build Status](https://travis-ci.org/zlxbuzz/z.js.svg?branch=master)](https://travis-ci.org/zlxbuzz/z.js) [![codecov](https://codecov.io/gh/zlxbuzz/z.js/branch/master/graph/badge.svg)](https://codecov.io/gh/zlxbuzz/z.js)
+
 前端工具库
 
 ## 安装
