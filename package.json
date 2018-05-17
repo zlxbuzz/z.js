@@ -9,6 +9,7 @@
     "dev": "rollup -c -w",
     "build": "npm run test && rollup -c",
     "doc": "node scripts/doc.js",
+    "codecov": "codecov --token=36a38c5b-da51-4595-b331-d82a3fcfd49b",
     "test": "jest --verbose  --coverage"
   },
   "jest": {
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
+    "codecov": "^3.0.2",
     "fs-extra": "^5.0.0",
     "jest": "^22.0.4",
     "jsdoc": "^3.5.5",
