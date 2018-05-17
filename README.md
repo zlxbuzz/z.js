@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zlxbuzz/z.js.svg?branch=master)](https://travis-ci.org/zlxbuzz/z.js)
+
 # z.js
 前端工具库
 
