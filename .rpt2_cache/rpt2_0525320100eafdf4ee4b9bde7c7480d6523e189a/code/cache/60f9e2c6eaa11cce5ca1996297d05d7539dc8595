@@ -1,1 +1,0 @@
-{"code":"/// <reference path=\"index.d.ts\"/>\r\nvar url = {\r\n    getParamByName: function () {\r\n        console.log(1);\r\n    }\r\n};\r\nexport default url;\r\n"}
