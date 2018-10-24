@@ -1,35 +1,43 @@
-## Functions
+<a name="url.getParamByName"></a>
 
-<dl>
-<dt><a href="#getParamByName">getParamByName()</a></dt>
-<dd><p>获取url参数</p>
-</dd>
-<dt><a href="#parseQueryString">parseQueryString()</a></dt>
-<dd><p>解析url参数</p>
-</dd>
-</dl>
+## .getParamByName() ⇒ <code>string</code>
+<p>获取url参数</p>
 
-<a name="getParamByName"></a>
+**Kind**: static function  
 
-## getParamByName()
-获取url参数
+| Type | Description |
+| --- | --- |
+| <code>string</code> | <p>name</p> |
+| <code>string</code> | <p>url</p> |
 
-**Kind**: global function  
 **Example**  
 ```js
-// url www.baidu.com?c=aa
-import {getParamByName} from 'zrutil'
-getParamByName('c') => 'aa'
+getParamByName("a", "http://www.baidu.com?a=1&b=aaa") // "1"
 ```
-<a name="parseQueryString"></a>
-
-## parseQueryString()
-解析url参数
-
-**Kind**: global function  
 **Example**  
 ```js
-// url www.baidu.com?c=aa
-import {parseQueryString} from 'zrutil'
-parseQueryString(url) => {c: 'aa'}
+getParamByName("b", "http://www.baidu.com?a=1&b=aaa") // "aaa"
+```
+**Example**  
+```js
+getParamByName("c", "http://www.baidu.com?a=1&b=aaa") //""
+```
+**Example**  
+```js
+getParamByName("c") // "ccc"
+```
+<a name="url.parseQueryString"></a>
+
+## .parseQueryString() ⇒ <code>Object</code>
+<p>解析url</p>
+
+**Kind**: static function  
+
+| Type | Description |
+| --- | --- |
+| <code>string</code> | <p>url</p> |
+
+**Example**  
+```js
+parseQueryString("http://www.baidu.com?a=1&b=aaa") // {a:'1',b:'aaa'}
 ```

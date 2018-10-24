@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./test/",
+    "target": "es2015",
+    "module": "commonjs",
+    "typeRoots": ["./@types", "./node_modules/@types/"]
+  },
+  "types": ["jest"]
+}
