@@ -10,6 +10,7 @@ yarn-error.log*
 
 # Editor directories and files
 .idea
+.rpt2_cache
 .vscode
 *.suo
 *.ntvs*
