@@ -13,5 +13,10 @@
   console.log(_.iOS())
   console.log(_.Android())
   console.log(_.isMini())
+  console.log('set token')
+  _.set('token', '123');
+  console.log('get token', _.get('token'))
+  _.clear('token')
+  console.log('get token', _.get('token'))
 </script>
 </html>
