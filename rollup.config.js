@@ -1,4 +1,4 @@
-import pkg from "./package.json";
+// import pkg from "./package.json";
 import resolve from "rollup-plugin-node-resolve"; //加载查找外部模块
 import babel from "rollup-plugin-babel"; // babel
 import serve from "rollup-plugin-serve"; // dev server

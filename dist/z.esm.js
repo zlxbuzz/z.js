@@ -209,4 +209,61 @@ var isCode = verification.isCode;
 var isEmail = verification.isEmail;
 var isPhone = verification.isPhone;
 
-export { getParamByName, parseQueryString, iOS, Weixin, Android, isBrowser, isMobile, isMara, isMini, isCode, isEmail, isPhone };
+var prefix = 'store';
+var storage = {
+  /**
+  * 设置storage
+  * @param {string} - attr
+  * @param {string|number} - val
+  * @returns {void}
+  * @example
+  * set("token", "123") // undefined
+  * @example
+  * get("token") // "123"
+  */
+  set: function set(attr, val) {
+    localStorage.setItem(prefix + attr, val);
+  },
+
+  /**
+   * 获取storage
+   * @param {string} - attr
+   * @returns {string}
+   * @example
+   * get("token") // "123"
+   */
+  get: function get(attr) {
+    return localStorage.getItem(prefix + attr);
+  },
+
+  /**
+  * 移除storage
+  * @param {string} - attr
+  * @returns {void}
+  * @example
+  * remove("token") // undefined
+  * @example
+  * get("token") // null
+  */
+  remove: function remove(attr) {
+    localStorage.removeItem(prefix + attr);
+  },
+
+  /**
+   * 移除所有storage
+   * @returns {void}
+   * @example
+   * clear() // undefined
+   * @example
+   * get("token") // null
+   */
+  clear: function clear() {
+    localStorage.clear();
+  }
+};
+var set = storage.set;
+var get = storage.get;
+var remove = storage.remove;
+var clear = storage.clear;
+
+export { getParamByName, parseQueryString, iOS, Weixin, Android, isBrowser, isMobile, isMara, isMini, isCode, isEmail, isPhone, set, get, remove, clear };
